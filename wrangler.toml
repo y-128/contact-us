@@ -1,0 +1,30 @@
+name = "contact-us-worker"
+main = "src/index.ts"
+compatibility_date = "2024-03-20"
+compatibility_flags = ["nodejs_compat"]
+
+# KV Namespace binding
+[[kv_namespaces]]
+binding = "TICKET_KV"
+id = "<作成時に出力された id>"
+preview_id = "<preview 作成時に出力された id>"
+
+# Email trigger for inbound email handler
+[[email]]
+name = "email"
+
+
+[observability]
+enabled = false
+head_sampling_rate = 1
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+persist = true
+invocation_logs = true
+
+[observability.traces]
+enabled = false
+persist = true
+head_sampling_rate = 1
