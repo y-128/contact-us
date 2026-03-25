@@ -172,3 +172,7 @@ npx wrangler dev
 - `RESEND_FROM_EMAIL` のドメインで Cloudflare Email Routing が有効になっている必要がある
 - Resend の送信ドメインと受信ドメインは異なっていても構わないが、Reply-To のドメインは受信可能である必要がある
 - 送信専用ドメイン（例: `noreply@send.example.com`）を使う場合は `REPLY_TO_DOMAIN` を受信側ドメインに設定する
+
+## ライセンス
+
+MIT License - 詳細は [LICENSE](LICENSE) を参照。
